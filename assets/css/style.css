@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Hanken-Grotesk;
+    src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+:root {
+    --results-secondary-text: rgb(200, 194, 255);
+    --results-light-gradient: rgb(103, 67, 255);
+    --results-dark-gradient: rgb(49, 44, 232)
+}
+
+body {
+    height: 100vh;
+    font-family: "Hanken-Grotesk";
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.results {
+    background: linear-gradient(180deg, var(--results-light-gradient), var(--results-dark-gradient));
+    color: var(--results-secondary-text);
+    text-align: center;
+}
+
+.eval-level {
+    color: white;
+    font-size: x-large;
+}
+
+li {
+    list-style-type: none;
+}
