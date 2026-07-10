@@ -32,7 +32,7 @@ body {
     flex-wrap: wrap;
     height: fit-content;
     width: fit-content;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     background-color: white;
 }
 
@@ -42,15 +42,22 @@ body {
     background: linear-gradient(180deg, var(--results-light-gradient), var(--results-dark-gradient));
     color: var(--results-secondary-text);
     text-align: center;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     height: 26rem;
-    width: 300px;
-    padding: 3rem;
+    width: 265px;
+    padding: 5.5rem;
 }
 
 .eval-level {
     color: white;
-    font-size: x-large;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.eval-comparison {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 .summary {
@@ -59,7 +66,7 @@ body {
     align-content: space-evenly;
     width: 300px;
     background-color: white;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     height: 26rem;
     padding: 3rem;
 }
@@ -70,8 +77,8 @@ body {
     align-self: center;
     border-radius: 100%;
     background: linear-gradient(180deg, var(--results-dark-gradient), var(--results-light-gradient));
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 
@@ -79,11 +86,17 @@ li {
     list-style-type: none;
 }
 
+img {
+    margin-right: 5px;
+}
+
 button {
-    margin-top: 30px;
+    margin-top: 40px;
     background-color: rgb(48, 59, 89);
+    font-weight: 300;
+    font-size: 1rem;
     color: white;
-    height: 40px;
+    height: 60px;
     border-radius: 2rem;
 }
 
@@ -106,6 +119,10 @@ h2 {
     border-radius: 1em;
 }
 
+#score {
+    border-radius: 100%;
+}
+
 #score-value {
     align-self: center;
     font-size: 4rem;
@@ -114,14 +131,28 @@ h2 {
 }
 
 #reaction {
-    background-color: rgb(255, 246, 247);
+    color: #d17777
 }
 #memory {
-    background-color: rgb(255, 250, 244);
+    color: #ecc061;
+
 }
 #verbal {
-    background-color: rgb(242, 253, 249);
+    color: #32a588;
 }
 #visual {
+    color: #333e98;
+}
+
+#reaction-banner {
+    background-color: rgb(255, 246, 247);
+}
+#memory-banner {
+    background-color: rgb(255, 250, 244);
+}
+#verbal-banner {
+    background-color: rgb(242, 253, 249);
+}
+#visual-banner {
     background-color: rgb(244, 244, 254);
 }
